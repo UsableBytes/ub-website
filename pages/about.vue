@@ -4,11 +4,10 @@
 <nuxt-link to ="/"> Go to Home Page</nuxt-link>
 </div>
 </template>
-<script>
-export default {
-head:{
-        title:"About Usable Bytes"
-    }  
+<script src="./about/about.js">
 
-}
 </script>
+<style src="./about/about.css">
+
+</style>
+

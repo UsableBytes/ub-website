@@ -1,8 +1,9 @@
 {
   "name": "nuxt-stack",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Nuxt.js project",
+  "author": "sagar735 <sagarmahajan735@gmail.com>",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nuxt",
@@ -12,8 +13,6 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit":"npm run lint"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "nuxt": "^1.0.0-rc11"
   },
@@ -21,6 +20,7 @@
     "babel-eslint": "^8.0.1",
     "eslint": "^4.8.0",
     "eslint-config-standard": "^10.2.1",
+    "eslint-loader": "^1.9.0",
     "eslint-plugin-html": "^3.2.2",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.2.0",

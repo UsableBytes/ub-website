@@ -6,17 +6,8 @@
 
 </div>
 </template>
-<script>
-export default {
-    data(){
-        return{
-            company_name:"Usable Bytes"
-        }
-    },
-    head:{
-        title:"Welcome to Usable Bytes"
-    }
-}
+<script src="./index/index.js">
+
 </script>
-<style>
+<style src="./index/index.css">
 </style>
