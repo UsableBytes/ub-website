@@ -5,6 +5,6 @@ export default {
     }
   },
   head: {
-    title: 'Welcome to Usable Bytes'
+    title: 'Welcome '
   }
 }
