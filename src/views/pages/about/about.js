@@ -1,6 +1,6 @@
 
 export default{
   head: {
-    title: 'About Usable Bytes'
+    title: 'About '
   }
 }
