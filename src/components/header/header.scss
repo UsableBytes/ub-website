@@ -1,4 +1,84 @@
-.header{
-    font-family:Arial, Helvetica, sans-serif;
+$font-stack: Cambria,
+Cochin,
+Georgia,
+Times,
+Times New Roman,
+serif;
+$font-color:black;
+* {
+    margin: 0;
+    padding: 0;
+}
 
+#navigation-panel {
+    background-color: white;
+    text-align: center;
+}
+
+#navigration-panel-wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+#clear-fix {
+    clear: both;
+}
+
+#tablet-logo,
+#desktop-logo {
+    display: none;
+}
+
+#mobile-logo {
+    float: left;
+    margin: auto;
+    padding-left: 1.5rem;
+    padding-top: 10px;
+}
+
+#organisation-name {
+    display: inline-block;
+    padding-top: 20px;
+    font-size: 2rem;
+    font-family: $font-stack;
+    color: $font-color;
+}
+
+@media(min-width:495px) {
+    #mobile-logo,
+    #desktop-logo {
+        display: none;
+    }
+    #tablet-logo {
+        display: initial;
+        float: left;
+        margin: auto;
+        padding-left: 1.5rem;
+        padding-top: 10px;
+    }
+    #organisation-name {
+        display: inline-block;
+        font-size: 3rem;
+        font-family: $font-stack;
+        color: $font-color;
+    }
+}
+
+@media(min-width:970px) {
+    #navigration-panel-wrapper {
+        width: 960px;
+    }
+    #mobile-logo,
+    #tablet-logo {
+        display: none;
+    }
+    #desktop-logo {
+        display: initial;
+        float: left;
+        margin: auto;
+        padding-top: 10px;
+    }
+    #organisation-name {
+        font-size: 4rem;
+    }
 }

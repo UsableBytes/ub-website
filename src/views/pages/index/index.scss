@@ -1,5 +1,206 @@
-$font-stack-heading:Arial, Helvetica, sans-serif;
+   $font-stack:'Segoe UI',
+   Tahoma,
+   Geneva,
+   Verdana,
+   sans-serif;
+   $background-color:rgb(240, 228, 228);
+   #hero-section {
+       margin: auto;
+       margin-top: 1rem;
+       width: 100%;
+   }
 
-.main-heading{
-    font-family:$font-stack-heading
-}
+   #hero-section-image {
+       background-image: url("../../../static/images/hero-section-background-image.jpg");
+       background-repeat: no-repeat;
+       height: 90vh;
+       background-size: cover;
+       background-position: center;
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+   }
+
+   #hero-section-content {
+       font-size: 2rem;
+       margin: auto;
+       font-family: $font-stack;
+       color: white;
+       padding: 0 2rem 0 2rem;
+   }
+
+   #offering-panel {
+       background-color: $background-color;
+       height: 60vh;
+       margin: auto;
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-pack: center;
+       -ms-flex-pack: center;
+       justify-content: center;
+       -webkit-box-align: center;
+       -ms-flex-align: center;
+       align-items: center;
+       position: relative;
+       font-family: $font-stack;
+   }
+
+   #offering-content {
+       p {
+           font-size: 1.2rem;
+           padding: 0 1.5rem 0 1.5rem;
+       }
+   }
+
+   #learnmore-link {
+       position: absolute;
+       top: 80%;
+       right: 20%;
+       font-size: 1.2rem;
+   }
+
+   #webf-panel {
+       height: 40vh;
+       background-color: white;
+       margin: auto;
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-box-pack: center;
+       -ms-flex-pack: center;
+       justify-content: center;
+       -webkit-box-align: center;
+       -ms-flex-align: center;
+       align-items: center;
+       text-align: center;
+   }
+
+   #webf-content {
+       width: 100%;
+       font-family: $font-stack;
+       font-size: 1.2rem;
+       padding: 0 1.5rem 0 1.5rem;
+       a:link {
+           text-decoration: none;
+           color: #0AAB8A;
+       }
+   }
+
+   #webf-link {
+       font-weight: bold;
+       color: #0AAB8A;
+   }
+
+   #about-us {
+       background-color: $background-color;
+       height: 20vh;
+   }
+
+   #about-us-wrapper {
+       width: 100%;
+   }
+
+   #about-us-title {
+       font-family: $font-stack;
+       font-weight: bold;
+       font-size: 1rem;
+       display: inline-block;
+       margin-top: 1.2rem;
+       padding: 0 0 0 1.5rem;
+   }
+
+   #organisation-twitter {
+       margin-top: 1.2rem;
+       float: right;
+   }
+
+   #twitter-handle-img {
+       display: inline-block;
+   }
+
+   #organisation-twitter-name {
+       font-family: $font-stack;
+       font-weight: bold;
+       font-size: 1rem;
+       margin: 0 1.5rem 0 0;
+       display: inline-block;
+       vertical-align: top;
+       a {
+           text-decoration: none;
+           color:black;
+       }
+   }
+
+   #organisation-address {
+       font-family: $font-stack;
+       font-size: 1rem;
+       margin-top: 10px;
+       padding: 0 0 0 1.5rem;
+   }
+
+   @media(min-width:495px) {
+       #hero-section-content {
+           font-size: 2.3rem;
+       }
+       #offering-content {
+           p {
+               font-size: 1.7rem;
+           }
+       }
+       #learnmore-link {
+           top: 80%;
+           right: 20%;
+           font-size: 1.3rem;
+       }
+       #webf-content {
+           font-size: 1.7rem;
+       }
+       #organisation-twitter-name {
+           font-family: $font-stack;
+           font-weight: bold;
+           font-size: 1rem;
+       }
+   }
+
+   @media(min-width:970px) {
+       #hero-section-content {
+           font-size: 2.5rem;
+           width: 960px;
+           padding: 0;
+       }
+       #offering-content {
+           width: 960px;
+           margin: auto;
+       }
+       #offering-content {
+           p {
+               font-size: 2rem;
+               padding: 0;
+           }
+       }
+       #learnmore-link {
+           position: absolute;
+           top: 80%;
+           right: 20%;
+           font-size: 1.5rem;
+       }
+       #webf-content {
+           width: 960px;
+           font-size: 2rem;
+           padding: 0;
+       }
+       #about-us-wrapper {
+           width: 960px;
+           margin: auto;
+       }
+       #about-us-title {
+           padding: 0;
+       }
+       #organisation-address {
+           font-family: $font-stack;
+           font-size: 1rem;
+           margin-top: 10px;
+           padding: 0;
+       }
+   }
