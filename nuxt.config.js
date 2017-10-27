@@ -28,7 +28,7 @@ module.exports = {
     link: [{
       rel: 'icon',
       type: 'image/x-icon',
-      href: './src/static/favicon.ico'
+      href: '/favicon.ico'
     }]
   }
 }

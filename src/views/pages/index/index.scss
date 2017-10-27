@@ -4,14 +4,14 @@
    Verdana,
    sans-serif;
    $background-color:rgb(240, 228, 228);
-   #hero-section {
+   .hero-section {
        margin: auto;
        margin-top: 1rem;
        width: 100%;
    }
 
-   #hero-section-image {
-       background-image: url("../../../static/images/hero-section-background-image.jpg");
+   .hero-section-image {
+       background-image: url("../../static/images/hero-section-background-image.jpg");
        background-repeat: no-repeat;
        height: 90vh;
        background-size: cover;
@@ -21,7 +21,7 @@
        display: flex;
    }
 
-   #hero-section-content {
+   .hero-section-content {
        font-size: 2rem;
        margin: auto;
        font-family: $font-stack;
@@ -29,7 +29,7 @@
        padding: 0 2rem 0 2rem;
    }
 
-   #offering-panel {
+   .offering-panel {
        background-color: $background-color;
        height: 60vh;
        margin: auto;
@@ -46,21 +46,21 @@
        font-family: $font-stack;
    }
 
-   #offering-content {
+   .offering-content {
        p {
            font-size: 1.2rem;
            padding: 0 1.5rem 0 1.5rem;
        }
    }
 
-   #learnmore-link {
+   .learnmore-link {
        position: absolute;
        top: 80%;
        right: 20%;
        font-size: 1.2rem;
    }
 
-   #webf-panel {
+   .webf-panel {
        height: 40vh;
        background-color: white;
        margin: auto;
@@ -76,7 +76,7 @@
        text-align: center;
    }
 
-   #webf-content {
+   .webf-content {
        width: 100%;
        font-family: $font-stack;
        font-size: 1.2rem;
@@ -84,24 +84,20 @@
        a:link {
            text-decoration: none;
            color: #0AAB8A;
+           font-weight: bold;
        }
    }
 
-   #webf-link {
-       font-weight: bold;
-       color: #0AAB8A;
-   }
-
-   #about-us {
+   .about-us {
        background-color: $background-color;
        height: 20vh;
    }
 
-   #about-us-wrapper {
+   .about-us-wrapper {
        width: 100%;
    }
 
-   #about-us-title {
+   .about-us-title {
        font-family: $font-stack;
        font-weight: bold;
        font-size: 1rem;
@@ -110,29 +106,28 @@
        padding: 0 0 0 1.5rem;
    }
 
-   #organisation-twitter {
+   .organisation-twitter {
        margin-top: 1.2rem;
        float: right;
    }
 
-   #twitter-handle-img {
+   .twitter-handle-img {
        display: inline-block;
    }
 
-   #organisation-twitter-name {
+   .organisation-twitter-name {
        font-family: $font-stack;
-       font-weight: bold;
        font-size: 1rem;
        margin: 0 1.5rem 0 0;
        display: inline-block;
        vertical-align: top;
        a {
            text-decoration: none;
-           color:black;
+           color: black;
        }
    }
 
-   #organisation-address {
+   .organisation-address {
        font-family: $font-stack;
        font-size: 1rem;
        margin-top: 10px;
@@ -140,23 +135,23 @@
    }
 
    @media(min-width:495px) {
-       #hero-section-content {
+       .hero-section-content {
            font-size: 2.3rem;
        }
-       #offering-content {
+       .offering-content {
            p {
                font-size: 1.7rem;
            }
        }
-       #learnmore-link {
+       .learnmore-link {
            top: 80%;
            right: 20%;
            font-size: 1.3rem;
        }
-       #webf-content {
+       .webf-content {
            font-size: 1.7rem;
        }
-       #organisation-twitter-name {
+       .organisation-twitter-name {
            font-family: $font-stack;
            font-weight: bold;
            font-size: 1rem;
@@ -164,40 +159,40 @@
    }
 
    @media(min-width:970px) {
-       #hero-section-content {
+       .hero-section-content {
            font-size: 2.5rem;
            width: 960px;
            padding: 0;
        }
-       #offering-content {
+       .offering-content {
            width: 960px;
            margin: auto;
        }
-       #offering-content {
+       .offering-content {
            p {
                font-size: 2rem;
                padding: 0;
            }
        }
-       #learnmore-link {
+       .learnmore-link {
            position: absolute;
            top: 80%;
            right: 20%;
            font-size: 1.5rem;
        }
-       #webf-content {
+       .webf-content {
            width: 960px;
            font-size: 2rem;
            padding: 0;
        }
-       #about-us-wrapper {
+       .about-us-wrapper {
            width: 960px;
            margin: auto;
        }
-       #about-us-title {
+       .about-us-title {
            padding: 0;
        }
-       #organisation-address {
+       .organisation-address {
            font-family: $font-stack;
            font-size: 1rem;
            margin-top: 10px;
