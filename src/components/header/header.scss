@@ -1,62 +1,57 @@
-$font-stack: Cambria,
-Cochin,
-Georgia,
-Times,
-Times New Roman,
-serif;
+@import '../../assets/css/main.scss';
+$font-stack:'Roboto', sans-serif;
 $font-color:black;
-* {
-    margin: 0;
-    padding: 0;
-}
 
-#navigation-panel {
+.navigation-panel {
     background-color: white;
     text-align: center;
 }
 
-#navigration-panel-wrapper {
-    width: 100%;
+.navigration-panel-wrapper {
+    max-width: 1440px;
     margin: auto;
 }
 
-#clear-fix {
+.clear-fix{
     clear: both;
 }
 
-#tablet-logo,
-#desktop-logo {
+.tablet-logo,
+.desktop-logo {
     display: none;
 }
 
-#mobile-logo {
+.mobile-logo {
     float: left;
     margin: auto;
     padding-left: 1.5rem;
     padding-top: 10px;
 }
 
-#organisation-name {
+.organisation-name {
     display: inline-block;
     padding-top: 20px;
     font-size: 2rem;
-    font-family: $font-stack;
+    font-family:$font-stack;
     color: $font-color;
 }
 
-@media(min-width:495px) {
-    #mobile-logo,
-    #desktop-logo {
+@include respond-to('medium') {
+    
+    .mobile-logo,
+    .desktop-logo {
         display: none;
     }
-    #tablet-logo {
+    
+    .tablet-logo {
         display: initial;
         float: left;
         margin: auto;
         padding-left: 1.5rem;
         padding-top: 10px;
     }
-    #organisation-name {
+    
+    .organisation-name {
         display: inline-block;
         font-size: 3rem;
         font-family: $font-stack;
@@ -64,21 +59,21 @@ $font-color:black;
     }
 }
 
-@media(min-width:970px) {
-    #navigration-panel-wrapper {
-        width: 960px;
-    }
-    #mobile-logo,
-    #tablet-logo {
+@include respond-to('large') {
+    
+    .mobile-logo,
+    .tablet-logo {
         display: none;
     }
-    #desktop-logo {
+    
+    .desktop-logo {
         display: initial;
         float: left;
         margin: auto;
         padding-top: 10px;
     }
-    #organisation-name {
+    
+    .organisation-name {
         font-size: 4rem;
     }
 }

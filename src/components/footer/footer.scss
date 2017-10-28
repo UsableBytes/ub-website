@@ -1,3 +1,5 @@
+@import '../../assets/css/main.scss';
+
 footer {
     background-color: black;
     width: 100%;
@@ -9,12 +11,14 @@ footer {
     color: white;
     font-style: italic;
     padding: 0 0 0 1.5rem;
+    max-width: 1440px;
 }
 
-@media(min-width:970px) {
+@include respond-to('large') {
+   
     #copyright-content {
-        width: 960px;
+        
         margin: auto;
-        padding: 0;
+        padding: 1rem 0 1rem 0;
     }
 }
