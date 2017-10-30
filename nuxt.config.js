@@ -14,9 +14,14 @@ module.exports = {
       }
     }
   },
+  loading: {
+    name: 'circle',
+    color: 'black',
+    backgrround: 'white'
+  },
   srcDir: 'src/views/',
   head: {
-    titleTemplate: '%s - usable bytes',
+    titleTemplate: '%s - Usable Bytes',
     meta: [{
       charset: 'utf-8'
     },
@@ -24,6 +29,22 @@ module.exports = {
       name: 'viewport',
       content: 'width=device-width, initial-scale=1'
     }
-    ]
-  }
+    ],
+    link: [{
+      rel: 'icon',
+      type: 'image/x-icon',
+      href: '/favicon.ico'
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css?family=Lato'
+    },
+    {
+      rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css?family=Roboto'
+    }]
+  },
+  css: [
+    '@/../assets/css/main.scss'
+  ]
 }
