@@ -1,216 +1,221 @@
-@import "../../../assets/css/main.scss";
-
-$font-stack: "Lato", sans-serif;
+@import '../../../assets/css/main.scss';
+$font-stack: 'Lato',sans-serif;
 $background-color: rgb(240, 228, 228);
 $word-spacing: 0.2rem;
 
+* {
+    padding: 0;
+    margin: 0;
+}
+
 .hero-section {
-  margin: auto;
-  width: 100%;
+    margin: auto;
+    width: 100%;
 }
 
 .hero-section-image {
-  background-image: url("../../static/images/hero-section-background-image.jpg");
-  background-repeat: no-repeat;
-  height: 90vh;
-  background-size: cover;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  // justify-content: flex-start;
-  // align-items: center;
+    background-image: url('../../static/images/hero-section-background-image.jpg');
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-section-content {
-  font-size: 2rem;
-  margin: auto;
-  font-family: $font-stack;
-  color: white;
-  padding: 0 2rem 0 2rem;
-  word-spacing: $word-spacing;
-  max-width: 1440px;
+    font-size: 2rem;
+    // margin: auto;
+    font-family: $font-stack;
+    color: white;
+    padding: 0 2rem;
+    word-spacing: $word-spacing;
+    max-width: 1440px;
 }
 
 .offering-panel {
-  background-color: $background-color;
-  height: 60vh;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  font-family: $font-stack;
-  word-spacing: $word-spacing;
+    background-color: $background-color;
+    height: 60vh;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    position: relative;
+    font-family: $font-stack;
+    word-spacing: $word-spacing;
+    padding: 0 1.5rem;
 }
 
 .offering-content {
-  p {
     max-width: 1440px;
-    font-size: 1.2rem;
-    padding: 0 1.5rem 0 1.5rem;
-  }
+
+    p {
+        font-size: 1.2rem;
+        padding: 0 1.5rem;
+    }
 }
 
 .learnmore-link {
-  position: absolute;
-  top: 80%;
-  right: 20%;
-  font-size: 1.2rem;
+    position: absolute;
+    top: 85%;
+    right: 20%;
+    font-size: 1.2rem;
 }
 
 .webf-panel {
-  height: 40vh;
-  background-color: white;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center;
-  word-spacing: $word-spacing;
+    height: 40vh;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    word-spacing: $word-spacing;
 }
 
 .webf-content {
-  max-width: 1440px;
-  font-family: $font-stack;
-  font-size: 1.2rem;
-  padding: 0 1.5rem 0 1.5rem;
+    max-width: 1440px;
+    font-family: $font-stack;
+    font-size: 1.2rem;
+    padding: 0 1.5rem;
 
-  a:link {
-    text-decoration: none;
-    color: #0aab8a;
-    font-weight: bold;
-  }
+    a:link {
+        text-decoration: none;
+        color: #0AAB8A;
+        font-weight: bold;
+    }
 }
 
 .about-us {
-  background-color: $background-color;
-  height: 20vh;
+    background-color: $background-color;
+    height: 20vh;
 }
 
 .about-us-wrapper {
-  max-width: 1440px;
+    max-width: 1440px;
 }
 
 .about-us-title {
-  font-family: $font-stack;
-  font-weight: bold;
-  font-size: 1rem;
-  display: inline-block;
-  margin-top: 1.2rem;
-  padding: 0 0 0 1.5rem;
-}
-
-.organisation-twitter {
-  margin-top: 1.2rem;
-  float: right;
-}
-
-.twitter-handle-img {
-  display: inline-block;
-}
-
-.organisation-twitter-name {
-  font-family: $font-stack;
-  font-size: 1rem;
-  margin: 0 1.5rem 0 0;
-  display: inline-block;
-  vertical-align: top;
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
-}
-
-.organisation-address {
-  font-family: $font-stack;
-  font-size: 1rem;
-  margin-top: 10px;
-  padding: 0 0 0 1.5rem;
-}
-
-@include respond-to("medium") {
-  .hero-section-content {
-    font-size: 2.3rem;
-  }
-
-  .offering-content {
-    p {
-      font-size: 1.7rem;
-    }
-  }
-
-  .learnmore-link {
-    top: 80%;
-    right: 20%;
-    font-size: 1.3rem;
-  }
-
-  .webf-content {
-    font-size: 1.7rem;
-  }
-
-  .organisation-twitter-name {
     font-family: $font-stack;
     font-weight: bold;
     font-size: 1rem;
-  }
+    display: inline-block;
+    margin-top: 1.2rem;
+    padding: 0 0 0 1.5rem;
 }
 
-@include respond-to("large") {
-  .hero-section-content {
-    font-size: 2.5rem;
-    padding: 0;
-  }
+.organisation-twitter {
+    margin-top: 1.2rem;
+    float: right;
+}
 
-  .offering-content {
-    margin: auto;
-  }
+.twitter-handle-img {
+    display: inline-block;
+}
 
-  .offering-content {
-    p {
-      font-size: 2rem;
-      padding: 0;
+.organisation-twitter-name {
+    font-family: $font-stack;
+    font-size: 1rem;
+    margin: 0 1.5rem 0 0;
+    display: inline-block;
+    vertical-align: top;
+
+    a {
+        text-decoration: none;
+        color: black;
     }
-  }
+}
 
-  .learnmore-link {
-    position: absolute;
-    top: 80%;
-    right: 20%;
-    font-size: 1.5rem;
-  }
-
-  .webf-content {
-    font-size: 2rem;
-    padding: 0;
-  }
-
-  .about-us-wrapper {
-    margin: auto;
-  }
-
-  .about-us-title {
-    padding: 0;
-  }
-
-  .organisation-address {
+.organisation-address {
     font-family: $font-stack;
     font-size: 1rem;
     margin-top: 10px;
-    padding: 0;
-  }
+    padding: 0.75rem 0 0 1.5rem;
+}
+
+@include respond-to('medium') {
+    .hero-section-content {
+        font-size: 2.3rem;
+    }
+
+    .offering-content {
+        p {
+            font-size: 1.7rem;
+        }
+    }
+
+    .learnmore-link {
+        top: 80%;
+        right: 20%;
+        font-size: 1.3rem;
+    }
+
+    .webf-content {
+        font-size: 1.7rem;
+    }
+
+    .organisation-twitter-name {
+        font-family: $font-stack;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+}
+
+@include respond-to('large') {
+    .hero-section-content {
+        font-size: 2.5rem;
+        padding-left: 1.5rem;
+    }
+
+    .offering-content {
+        margin: auto;
+    }
+
+    .offering-content {
+        p {
+            font-size: 2rem;
+            padding-left: 1.5rem;
+        }
+    }
+
+    .learnmore-link {
+        position: absolute;
+        top: 80%;
+        right: 20%;
+        font-size: 1.5rem;
+    }
+
+    .webf-content {
+        font-size: 2rem;
+        padding-left: 1.5rem;
+    }
+
+    .about-us-wrapper {
+        margin: auto;
+    }
+
+    .about-us-title {
+        padding: 0 0 0 1.5rem;
+    }
+
+    .organisation-address {
+        font-family: $font-stack;
+        font-size: 1rem;
+        margin-top: 10px;
+        padding: 0 0 0 1.5rem;
+    }
 }

@@ -1,24 +1,26 @@
 @import '../../assets/css/main.scss';
+$font-stack:'Lato',sans-serif;
 
 footer {
     background-color: black;
-    width: 100%;
-    margin: auto;
 }
 
-#copyright-content {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.copyright-content {
+    // max-width: 1440px;
+    font-family: $font-stack;
     color: white;
     font-style: italic;
     padding: 0 0 0 1.5rem;
-    max-width: 1440px;
+    margin: auto;
+
+    p {
+        margin: auto;
+        max-width: 1440px;
+    }
 }
 
 @include respond-to('large') {
-   
-    #copyright-content {
-        
-        margin: auto;
-        padding: 1rem 0 1rem 0;
+    .copyright-content {
+        padding: 1rem 0 1rem 1.5rem;
     }
 }

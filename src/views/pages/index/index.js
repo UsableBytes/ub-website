@@ -1,5 +1,5 @@
 export default {
-  head: {
-    title: 'Welcome '
-  }
-}
+    head: {
+        title: 'Welcome '
+    }
+};
