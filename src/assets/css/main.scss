@@ -1,18 +1,2 @@
+@import './_breakpoints.scss';
 @import 'normalize.css';
-
-$breakpoints: (
-    'medium': (min-width : 495px),
-    'large': (min-width: 970px)
-) !default;
-
-@mixin respond-to( $breakpoint ) {
-    @if map-has-key($map: $breakpoints, $key: $breakpoint) {
-        @media #{inspect(map-get($breakpoints, $breakpoint))} {
-            @content;
-        }
-    }
-
-    @else {
-        @warn 'no value could be retrive from `#{$breakpoint}`'
-}
-}

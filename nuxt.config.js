@@ -12,8 +12,33 @@ module.exports = {
                     loader: 'eslint-loader',
                     exclude: /(node_modules)/
                 });
+                // config.module.rules.push({
+                //     enforce: 'pre',
+                //     test: /\.html$/,
+                //     loader: 'html-loader',
+                //     query: {
+                //         attrs: 'img:srcset'
+                //     }
+                // });
             }
         }
+        // loaders: [{
+        //     test: /\.html$/,
+        //     loader: 'vue-html-loader',
+        //     query: {
+        //         attrs: 'img:src img:srcset'
+        //     }
+        // },
+        // {
+        //     test: /\.(png|jpg)$/,
+        //     loader: 'file-loader'
+        // }]
+        // vue: {
+        //     html: {
+        //         query: { attrs: 'img:src img:srcset' }
+        //     },
+        //     loaders: 'html-loader'
+        // }
     },
     loading: {
         name: 'circle',

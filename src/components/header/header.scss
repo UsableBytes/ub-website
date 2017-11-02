@@ -8,8 +8,8 @@ $font-color:black;
 }
 
 .navigation-panel-wrapper {
-    max-width: 1440px;
     margin: auto;
+    max-width: 1440px;
 }
 
 .clear-fix {
@@ -28,12 +28,17 @@ $font-color:black;
     padding-top: 10px;
 }
 
+// .logo {
+//     float: left;
+//     margin-left: 1.5rem;
+// }
+
 .organisation-name {
-    display: inline-block;
-    padding-top: 20px;
-    font-size: 2rem;
-    font-family: $font-stack;
     color: $font-color;
+    display: inline-block;
+    font-family: $font-stack;
+    font-size: 2rem;
+    padding-top: 20px;
 }
 
 @include respond-to('medium') {
@@ -51,10 +56,10 @@ $font-color:black;
     }
 
     .organisation-name {
-        display: inline-block;
-        font-size: 3rem;
-        font-family: $font-stack;
         color: $font-color;
+        display: inline-block;
+        font-family: $font-stack;
+        font-size: 3rem;
     }
 }
 
@@ -68,8 +73,8 @@ $font-color:black;
         display: initial;
         float: left;
         margin: auto;
-        padding-top: 10px;
         padding-left: 1.5rem;
+        padding-top: 10px;
     }
 
     .organisation-name {

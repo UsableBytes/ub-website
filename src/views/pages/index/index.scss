@@ -1,11 +1,11 @@
 @import '../../../assets/css/main.scss';
-$font-stack: 'Lato',sans-serif;
 $background-color: rgb(240, 228, 228);
+$font-stack: 'Lato',sans-serif;
 $word-spacing: 0.2rem;
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 .hero-section {
@@ -15,44 +15,37 @@ $word-spacing: 0.2rem;
 
 .hero-section-image {
     background-image: url('../../static/images/hero-section-background-image.jpg');
-    background-repeat: no-repeat;
-    height: 90vh;
-    background-size: cover;
     background-position: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
 }
 
 .hero-section-content {
-    font-size: 2rem;
-    // margin: auto;
-    font-family: $font-stack;
     color: white;
-    padding: 0 2rem;
-    word-spacing: $word-spacing;
+    font-size: 2rem;
+    font-family: $font-stack;
+    margin: auto;
     max-width: 1440px;
+    padding-top: 45vh;
+    word-spacing: $word-spacing;
+
+    p {
+        transform: translate(0, -50%);
+        padding-left: 1.5rem;
+    }
 }
 
 .offering-panel {
-    background-color: $background-color;
-    height: 60vh;
-    margin: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    position: relative;
+    background-color: $background-color;
+    display: flex;
     font-family: $font-stack;
+    height: 60vh;
+    justify-content: center;
+    margin: auto;
+    position: relative;
     word-spacing: $word-spacing;
-    padding: 0 1.5rem;
 }
 
 .offering-content {
@@ -74,29 +67,23 @@ $word-spacing: 0.2rem;
 .webf-panel {
     height: 40vh;
     background-color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     text-align: center;
     word-spacing: $word-spacing;
 }
 
 .webf-content {
-    max-width: 1440px;
     font-family: $font-stack;
     font-size: 1.2rem;
+    max-width: 1440px;
     padding: 0 1.5rem;
 
     a:link {
-        text-decoration: none;
         color: #0AAB8A;
         font-weight: bold;
+        text-decoration: none;
     }
 }
 
@@ -110,10 +97,10 @@ $word-spacing: 0.2rem;
 }
 
 .about-us-title {
-    font-family: $font-stack;
-    font-weight: bold;
-    font-size: 1rem;
     display: inline-block;
+    font-family: $font-stack;
+    font-size: 1rem;
+    font-weight: bold;
     margin-top: 1.2rem;
     padding: 0 0 0 1.5rem;
 }
@@ -128,15 +115,15 @@ $word-spacing: 0.2rem;
 }
 
 .organisation-twitter-name {
+    display: inline-block;
     font-family: $font-stack;
     font-size: 1rem;
     margin: 0 1.5rem 0 0;
-    display: inline-block;
     vertical-align: top;
 
     a {
-        text-decoration: none;
         color: black;
+        text-decoration: none;
     }
 }
 
@@ -159,9 +146,9 @@ $word-spacing: 0.2rem;
     }
 
     .learnmore-link {
-        top: 80%;
-        right: 20%;
         font-size: 1.3rem;
+        right: 20%;
+        top: 80%;
     }
 
     .webf-content {
@@ -170,15 +157,14 @@ $word-spacing: 0.2rem;
 
     .organisation-twitter-name {
         font-family: $font-stack;
-        font-weight: bold;
         font-size: 1rem;
+        font-weight: bold;
     }
 }
 
 @include respond-to('large') {
     .hero-section-content {
         font-size: 2.5rem;
-        padding-left: 1.5rem;
     }
 
     .offering-content {
@@ -193,10 +179,10 @@ $word-spacing: 0.2rem;
     }
 
     .learnmore-link {
-        position: absolute;
-        top: 80%;
-        right: 20%;
         font-size: 1.5rem;
+        position: absolute;
+        right: 20%;
+        top: 85%;
     }
 
     .webf-content {
