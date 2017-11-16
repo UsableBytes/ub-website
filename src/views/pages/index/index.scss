@@ -118,8 +118,9 @@ $word-spacing: 0.2rem;
     display: inline-block;
     font-family: $font-stack;
     font-size: 1rem;
+    font-weight:bold;
     margin: 0 1.5rem 0 0;
-    vertical-align: top;
+    vertical-align:50%;
 
     a {
         color: black;
@@ -131,7 +132,7 @@ $word-spacing: 0.2rem;
     font-family: $font-stack;
     font-size: 1rem;
     margin-top: 10px;
-    padding: 0.75rem 0 0 1.5rem;
+    padding:0 0 0 1.5rem;
 }
 
 @include respond-to('medium') {
