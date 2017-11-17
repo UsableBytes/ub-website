@@ -3,28 +3,24 @@ env:
     es6: true
     node: true
 
-# Not sure if required (eslint-plugin-flowtype vs eslint-plugin-flowtype-errors)
-# extends: 'plugin:flowtype/recommended'
+# # Not sure if required (eslint-plugin-flowtype vs eslint-plugin-flowtype-errors)
+# # extends: 'plugin:flowtype/recommended'
 # plugins:
-#     - flowtype
+#     - vue
 
 parser: 'babel-eslint'
-extends: 'eslint:recommended'
-plugins:
-    - flowtype-errors
+# extends: ['vue', 'eslint:recommended']
 
 parserOptions:
     sourceType: module
 
 rules:
-    flowtype-errors/show-errors:
-        - 2
     indent:
         - error
         - 4
     linebreak-style:
         - error
-        - unix
+        - windows
     quotes:
         - error
         - single

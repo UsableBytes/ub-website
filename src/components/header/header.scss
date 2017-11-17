@@ -1,4 +1,83 @@
-.header{
-    font-family:Arial, Helvetica, sans-serif;
+@import '../../assets/css/main.scss';
+$font-stack:'Roboto', sans-serif;
+$font-color:black;
 
+.navigation-panel {
+    background-color: white;
+    text-align: center;
+}
+
+.navigation-panel-wrapper {
+    margin: auto;
+    max-width: 1440px;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.tablet-logo,
+.desktop-logo {
+    display: none;
+}
+
+.mobile-logo {
+    float: left;
+    margin: auto;
+    padding-left: 1.5rem;
+    padding-top: 10px;
+}
+
+// .logo {
+//     float: left;
+//     margin-left: 1.5rem;
+// }
+
+.organisation-name {
+    color: $font-color;
+    display: inline-block;
+    font-family: $font-stack;
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+@include respond-to('medium') {
+    .mobile-logo,
+    .desktop-logo {
+        display: none;
+    }
+
+    .tablet-logo {
+        display: initial;
+        float: left;
+        margin: auto;
+        padding-left: 1.5rem;
+        padding-top: 10px;
+    }
+
+    .organisation-name {
+        color: $font-color;
+        display: inline-block;
+        font-family: $font-stack;
+        font-size: 3rem;
+    }
+}
+
+@include respond-to('large') {
+    .mobile-logo,
+    .tablet-logo {
+        display: none;
+    }
+
+    .desktop-logo {
+        display: initial;
+        float: left;
+        margin: auto;
+        padding-left: 1.5rem;
+        padding-top: 10px;
+    }
+
+    .organisation-name {
+        font-size: 4rem;
+    }
 }
